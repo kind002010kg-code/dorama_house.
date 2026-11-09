@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171326;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Верхнее меню */
+
+.header {
+    background: #241d3d;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d8a4ff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #d8a4ff;
+}
+
+/* Приветствие */
+
+.welcome {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.welcome h1 {
+    color: #d8a4ff;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Каталог */
+
+.catalog {
+    padding: 30px 40px;
+}
+
+.catalog h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Flexbox */
+
+.cards {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: center;
+}
+
+/* Карточки */
+
+.card {
+    background: #29213f;
+    width: 260px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+
+/* Изображения дорам */
+
+.poster {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Карточки */
+
+.card {
+    background: #29213f;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #c4b8d9;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #d955f7;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7e22ce;
+}
+
+/* О сайте */
+
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about p {
+    margin-top: 15px;
+    color: #c4b8d9;
+}
+
+/* Подвал */
+
+footer {
+    background: #241d3d;
+    text-align: center;
+    padding: 20px;
+}
+
